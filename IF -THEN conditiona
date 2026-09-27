@@ -1,0 +1,14 @@
+SET SERVEROUTPUT ON;
+DECLARE
+v_website VARCHAR2(20);
+v_author  VARCHAR2(15);
+BEGIN
+v_website :='Hijab.pk';
+v_author :='Fatimah';
+IF v_author='Fatimah' AND v_website='Hijab.pk'
+THEN
+DBMS_OUTPUT.PUT_LINE('Everthing is great');
+END IF;
+DBMS_OUTPUT.PUT_LINE('Get the thumbs up');
+END;
+/
