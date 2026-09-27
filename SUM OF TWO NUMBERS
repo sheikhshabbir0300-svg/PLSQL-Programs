@@ -1,0 +1,11 @@
+--SUM OF TWO NUMBERS
+SET SERVEROUTPUT ON;
+DECLARE
+v_a NUMBER(6,3) :=100;
+v_b NUMBER(6,3) :=50;
+v_result NUMBER(6,3);
+BEGIN
+v_result :=v_a+v_b;
+DBMS_OUTPUT.PUT_LINE('SUM of a and b is : ' || v_result );
+END;
+/
