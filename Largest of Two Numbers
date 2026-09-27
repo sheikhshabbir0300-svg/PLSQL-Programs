@@ -1,0 +1,15 @@
+--Find the Largest of Two Numbers
+DECLARE
+a NUMBER(6);
+b NUMBER(6);
+BEGIN
+a :=6;
+b :=9;
+IF (a>b)
+THEN
+DBMS_OUTPUT.PUT_LINE( a || ' is larger number');
+ELSE
+DBMS_OUTPUT.PUT_LINE( b || ' is larger number');
+END IF;
+END;
+/
