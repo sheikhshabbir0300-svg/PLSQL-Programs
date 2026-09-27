@@ -1,0 +1,12 @@
+Declare
+v_number NUMBER(8,4);
+BEGIN
+v_number :=5;
+IF (MOD(v_number,2)=0)--MOD(number, 2) = 0
+THEN
+DBMS_OUTPUT.PUT_LINE(v_number || ' is Even number');
+ELSE
+DBMS_OUTPUT.PUT_LINE(v_number || ' is Odd number');
+END IF;
+END;
+/
