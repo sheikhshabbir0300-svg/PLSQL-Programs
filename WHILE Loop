@@ -1,0 +1,14 @@
+SET SERVEROUTPUT ON;
+DECLARE
+v_counter NUMBER :=1;
+v_result NUMBER;
+BEGIN
+  WHILE v_counter<=10
+  LOOP
+  v_result := 17 * v_counter;
+  DBMS_OUTPUT.PUT_LINE('17'||'X'||v_counter||'='||v_result);
+  v_counter :=v_counter + 1;
+END LOOP;
+DBMS_OUTPUT.PUT_LINE('Outside the loop');
+END;
+/
